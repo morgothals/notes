@@ -199,4 +199,42 @@ git rm --cached filename.txt
 
 ---
 
-Let me know if you’d like a downloadable version of this (Markdown or PDF)!
+## 🔧 Common Git flags
+
+| Flag | Meaning | Example |
+|------|---------|---------|
+| `-m` | Message | `git commit -m "Initial commit"` |
+| `-M` | Rename branch | `git branch -M main` |
+| `-u` | Set upstream (link local to remote branch) | `git push -u origin main` |
+| `--set-upstream` | Same as `-u` | `git pull --set-upstream origin main` |
+| `--allow-unrelated-histories` | Merge unrelated histories | `git pull origin main --allow-unrelated-histories` |
+
+---
+
+## 📝 Exit Git's text editor (Vim)
+
+When Git opens a text editor (e.g. for merge or commit messages):
+
+### Save and exit:
+```vim
+ESC
+:wq
+ENTER
+```
+
+### Exit without saving:
+```vim
+ESC
+:q!
+ENTER
+```
+
+---
+
+## 💡 Optional: Use Notepad as Git editor (on Windows)
+```bash
+git config --global core.editor "notepad"
+```
+
+---
+
